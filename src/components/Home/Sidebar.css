@@ -1,0 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+
+
+
+.formControl{
+    font-family: 'Indie Flower', cursive !important;
+    color:rgba(6, 83, 83, 0.877);
+    font-size: 40px;
+}

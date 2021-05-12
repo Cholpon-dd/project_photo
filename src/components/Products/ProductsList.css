@@ -1,0 +1,18 @@
+.pagination{
+    padding-top:30px;
+    padding-left:320px
+}
+
+
+
+
+@media all and (max-width:1024px){
+    .pagination{
+        padding-left: 240px;
+    }
+}
+@media all and (max-width: 425px){
+    .pagination{
+        padding-left: 50px;
+    }
+}

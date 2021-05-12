@@ -1,0 +1,24 @@
+.footer{
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    /* padding-top: 350px; */
+   /* max-height: 100%; */
+    
+    
+   
+} 
+.icons{
+    width: 100%;
+}
+.socials{
+    display: flex;
+    justify-content: center;
+}
+.icon{
+    padding-left: 13px;
+    list-style-type: none;
+} 
+.copyright{
+    margin: 0 auto;
+}

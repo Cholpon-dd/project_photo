@@ -1,0 +1,50 @@
+table{
+    border-collapse: collapse;  
+}
+td{
+    padding: 15px 0;
+    border-bottom: 1px solid silver;
+}
+.cart td{
+    padding: 10px 50px;
+}
+th{
+    text-align: center;
+    padding: 5px;
+    color: #0d5168;
+    font-weight: normal;
+
+}
+td input{
+    width: 40px;
+    height: 30px;
+    padding: 5px;
+}
+.delete{
+    margin-bottom: 20px;
+}
+
+.total-price{
+     text-align:end;
+    margin-right: 190px;
+    color: #0d5168;
+    font-size: 20px;
+      
+} 
+.btn-form{
+    display: inline;
+    padding: 7px 35px;
+    cursor: pointer;
+    outline: none;
+    background:#0d5168;
+    color: rgb(192, 192, 192);
+    font-size: 18px;
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-left: 600px;
+   
+}  
+.btn-form:hover{
+    box-shadow: 0 15px 15px -10px rgba(0,0,0, .5);
+    background: rgb(5, 60, 112)
+}

@@ -1,0 +1,21 @@
+.comment__item {
+    font-size: 15px;
+}
+.comment-main {
+    display: flex;
+    justify-content: center;
+    padding-top: 180px;
+    /* background-color: white; */
+    /* width: 400px; */
+}
+
+/* .content{
+    padding-top: -16px;
+} */
+.comment-button{
+    width: 100px;
+    margin-left: 200px;
+    background-color: paleturquoise;
+    border-radius: 5px;
+    /* height: 60px; */
+}

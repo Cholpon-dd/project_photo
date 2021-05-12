@@ -1,0 +1,54 @@
+.contain{
+    max-width: 1000px;
+    margin: 100px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.flip{
+    position: relative;
+    margin: 20px 0;
+    width: 300px;
+    height: 400px;
+    transform-style:preserve-3d;
+    transform: perspective(2000px);
+    transition: 1s;
+    box-shadow: inset 300px 0 50px rgba(0,0,0, .5);
+}
+.flip:hover{
+    z-index: 1000;
+    transform: perspective(2000px) rotate(-10deg);
+    box-shadow: inset 20px 0 50px rgba(0,0,0, .5);
+}
+.flip .imgBox{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border: 1px solid #000;
+  box-sizing: border-box;
+  transform-origin: left;
+  z-index: 1;
+  transition: 1s;
+}
+.flip:hover .imgBox{
+    transform: rotateY(-135deg);
+}
+.flip .imgBox .img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.flip .detail{
+    position: absolute;
+    top: 0;
+    left: 0;
+    box-sizing: border-box;
+    padding: 20px;
+}
+.detaill-desc{
+    color: #0d5168;
+}
+
