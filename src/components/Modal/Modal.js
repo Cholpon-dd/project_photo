@@ -61,15 +61,6 @@ const Modal = props=>{
             autoComplete="shipping address-line1"
           />
         </Grid>
-        {/* <Grid item xs={12}>
-          <TextField style={{borderBottom:"2px solid tomato"}}
-            id="address2"
-            name="address2"
-            label="Address line 2"
-            fullWidth
-            autoComplete="shipping address-line2"
-          />
-        </Grid> */}
         <Grid item xs={12} sm={6}>
           <TextField style={{borderBottom:"2px solid tomato"}}
             required

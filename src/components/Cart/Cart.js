@@ -29,7 +29,6 @@ const Cart = () => {
            
             {cart.products ? (
 
-          
             <div>
                 <table>
                     <thead>

@@ -18,64 +18,42 @@ export default function SimpleSlider() {
     slidesToShow: 4,
     slidesToScroll: 1,
     autoplay: true,
-    // adaptiveHeight: true,/
     autoplaySpeed: 1000
   };
   return (
     <Slider {...settings}>
       <div>
-          <div className="slide"
-          //  style={{ height: '300px', padding: '10px'}}
-           >
+          <div className="slide">
             <img className="slide-img" 
             src={kart4} 
-            // style={{ width: '100%', height: '100%', objectFit: 'cover'}}
             />
           </div>
       </div>
       <div>
-        <div className="slide" 
-        // style={{ height: '300px', padding: '10px'}}
-        >
+        <div className="slide">
           <img className="slide-img"  src={kart6} 
-          // style={{ width: '100%', height: '100%', objectFit: 'cover'}}
           />
         </div>
       </div>
       <div>
-        <div className="slide"
-        //  style={{ height: '300px', padding: '10px'}}
-         >
+        <div className="slide">
           <img className="slide-img"  src={kart2} 
-          // style={{ width: '100%', height: '100%', objectFit: 'cover'}}
           />
         </div>
       </div>
       <div>
-        <div className="slide" 
-        // style={{ height: '300px', padding: '10px'}}
-        >
-          <img className="slide-img"  src={kart5} 
-          // style={{ width: '100%', height: '100%', objectFit: 'cover'}}
-          />
+        <div className="slide">
+          <img className="slide-img"  src={kart5} />
         </div>
       </div>
       <div>
-        <div className="slide" 
-        // style={{ height: '300px', padding: '10px'}}
-        >
-          <img className="slide-img"  src={kart3} 
-          // style={{ width: '100%', height: '100%', objectFit: 'cover'}}
-          />
+        <div className="slide">
+          <img className="slide-img"  src={kart3} />
         </div>
       </div>
       <div>
-        <div className="slide"
-        //  style={{ height: '300px', padding: '10px'}}
-         >
-          <img className="slide-img"  src={kart1} 
-          // style={{ width: '100%', height: '100%', objectFit: 'cover'}}
-          />
+        <div className="slide">
+          <img className="slide-img"  src={kart1} />
         </div>
       </div>
     </Slider>

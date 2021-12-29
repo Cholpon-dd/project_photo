@@ -3,9 +3,6 @@
     padding-left:320px
 }
 
-
-
-
 @media all and (max-width:1024px){
     .pagination{
         padding-left: 240px;

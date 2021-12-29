@@ -8,6 +8,7 @@ import CheckCircleIcon from '@material-ui/icons/CheckCircle';
 import IconButton from "@material-ui/core/IconButton";
 import {Link} from 'react-router-dom'
 import '../OrderSummary/OrderSummary.css'
+
 const OrderSummary = () => {
     return (
         <div className="order_list">
@@ -16,10 +17,8 @@ const OrderSummary = () => {
             <span className="customer">Customer</span>
              <h3>Checking out as a Guest? You'll be able to save your details to create an account with us later.
             </h3>
-           
             <input placeholder="Email Address"/>
             <input type="checkbox"/><span>Yes, I want to hear about special offers and new culinary discoveries!</span>
-           
             <React.Fragment>
       <Typography variant="h6" gutterBottom>
         Shipping address
@@ -108,24 +107,9 @@ const OrderSummary = () => {
         </Grid>
       </Grid>
     </React.Fragment>
-    
-            
             <div>
                 <h3>Order Summary</h3>
-               {/* <ul>{cart.products.map(elem=>(
-                <li key={elem.item.id}
-                <li><img style={{width:"100px", height:"100px"}} src={elem.item.image}/></li>
-           <li>{elem.item.title}</li>
-           <li>{elem.item.price}</li>
-           <li>{elem.subPrice}</li>
-           <li>Total:{calcTotalPrice(cart.products)}</li>
-           </li>
-            </ul>
-            ))}  */}
             </div>
-            
-           
-
         </div>
     )
 }

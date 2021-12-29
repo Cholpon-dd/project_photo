@@ -17,9 +17,7 @@ const Content = () => {
 
   return (
     <Grid item md={9}>
-      {/* <Paper className={classes.paper}> */}
         <ProductsList />
-      {/* </Paper> */}
     </Grid>
   );
 };

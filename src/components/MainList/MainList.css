@@ -20,7 +20,6 @@
 
 }
 .family-photo{
-  
     padding: 80px;
 }
 
@@ -63,20 +62,16 @@
 @media all and (max-width:1024px){
     .about-me{
         display: flex;
-        flex-wrap: wrap;
-        
-        
+        flex-wrap: wrap;        
     }
     .fam-photo{
         width: 600px;
         padding-bottom: 5px;
         padding-left: 180px;
-
     }
     .about-me-title{
         font-size: 15px;
-        padding-top: 140px;
-       
+        padding-top: 140px;     
     }
     .gift-title{
         font-size: 18px;
@@ -89,43 +84,32 @@
         height:100px;
         margin-right: 110px;
         padding-bottom: 220px;
-        /* z-index: 5; */
     }
     .about-me-title{
         line-height: 25px;
         color: rgb(12, 84, 85);
-        /* padding-left: 30px; */
         font-size: 15px;
-        /* text-align: right; */
-        /* float: left; */
-        overflow: hidden;
-    
+        overflow: hidden; 
     }
     .fam-photo{
         padding-left: 40px;
         padding-top: 2px;
         width: 500px;
         margin-top: -10px;
- 
      }
      .wrap{
-   
         width: 90%;
         padding: 20px;
         margin: 100px auto;
         display: flex;
         flex-wrap: wrap;
         flex-direction: row;
-       
-        /* justify-content: center; */
     }
      .vert-photo{
         display: flex;
         flex-wrap: wrap;
         width: 100%;
         height:350px;
-       
-        /* border-radius: 5px; */
     }
     .box{
         width: 200px;
@@ -138,10 +122,9 @@
     }
 }
 @media all and (max-width: 425px){
+
     .fam-photo{
-        /* padding-right: 5px; */
         padding-top: 2px;
         width: 200px;
- 
      }
 }

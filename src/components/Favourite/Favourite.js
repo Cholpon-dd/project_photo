@@ -5,7 +5,6 @@ import "../Favourite/Favourite.css"
 import {calcTotalPrice} from '../../helpers/calcPrice'
 import IconButton from "@material-ui/core/IconButton";
 
-
 const Favourite = () => {
     const {getFavourite,
         favourite,
@@ -13,15 +12,11 @@ const Favourite = () => {
         checkProductInFavourite,
         deleteFavourite} =useContext(productsContext)
     const [totalPrice, setTotalPrice] = useState();
-   
-
-
-    
+       
     useEffect(()=>{
         getFavourite()
     },[])
    
-    
     useEffect(() => {
         if (favourite?.products && favourite?.products.length > 0) {
             setTotalPrice(calcTotalPrice(favourite.products));
@@ -29,11 +24,8 @@ const Favourite = () => {
     }, [favourite]);
 
     return (
-        <div className="cart" >
-           
+        <div className="cart" >  
             {favourite.products ? (
-
-          
             <div>
                 <table>
                     <thead>
@@ -64,8 +56,7 @@ const Favourite = () => {
                 <h1 className="cart-noprod" style={{ textAlign: "center" }}>
                     Нету избранных
                 </h1>
-            )}
-          
+            )}         
         </div>
     );
 };

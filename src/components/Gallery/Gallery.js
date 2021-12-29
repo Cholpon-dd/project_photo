@@ -8,6 +8,7 @@ import sist from '../../assets/images/sist.jpg'
 import two from '../../assets/images/two.jpg'
 import Family from '../../assets/images/Family.jpg'
 import dev from '../../assets/images/dev.jpg'
+
 const Gallery = () => {
     return (
         <>

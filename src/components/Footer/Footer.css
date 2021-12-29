@@ -1,12 +1,7 @@
 .footer{
     display: flex;
     flex-direction: column;
-    max-width: 100%;
-    /* padding-top: 350px; */
-   /* max-height: 100%; */
-    
-    
-   
+    max-width: 100%;   
 } 
 .icons{
     width: 100%;

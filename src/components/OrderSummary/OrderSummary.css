@@ -1,16 +1,13 @@
 .page-heading{
         margin: 0 0 1rem;
         text-align: left;
-       
         text-transform: uppercase;
         font-weight: 700;
         font-size: 30px;
         line-height: 1.2;
-        margin-top: 40px;
-    
+        margin-top: 40px;  
 }
 .customer{
-   
     font-weight: bold;
     text-transform: uppercase;
     padding: 0;
@@ -22,7 +19,6 @@
     cursor: pointer;
     outline: none;
     background:#ea9d9b;
-    
     font-size: 18px;
     border-radius: 10px;    
 }
@@ -30,7 +26,6 @@ a{
     text-decoration: none;
 }
 .order-next:hover{
-    
         box-shadow: 0 15px 15px -10px rgba(0,0,0, .5);
         background: rgb(173, 36, 12);  
 }

@@ -8,7 +8,6 @@
     object-fit: cover;
 }
 
-
 @media all and (max-width: 768px){
     .slide{
         height: 200px; 
@@ -18,7 +17,6 @@
     .slide-img{
         width: 200px;
         height: 200px;
-        /* object-fit: cover; */
         
     }
 }
@@ -31,7 +29,6 @@
     .slide-img{
         width: 100px;
         height: 100px;
-        /* object-fit: cover; */
         
     }
 }

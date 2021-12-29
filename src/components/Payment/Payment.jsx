@@ -5,7 +5,6 @@ import '../Payment/Payment.css'
 import {Link} from 'react-router-dom' 
 
 
-
 export default class PaymentForm extends React.Component {
   state = {
     cvc: '',

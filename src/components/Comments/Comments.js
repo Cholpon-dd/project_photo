@@ -3,7 +3,6 @@ import CommentsAdd from "./CommentsAdd";
 import CommentsList from "./CommentsList";
 import { commentContext } from "../../contexts/CommentContext";
 import { Comment } from "semantic-ui-react";
-// import { useAuth } from "../../contexts/AuthContext";
 import "./Comments.css";
 import { authContext } from "../../contexts/AuthContext";
 const Comments = () => {
@@ -17,12 +16,8 @@ const Comments = () => {
         <div className="comment-main">
             {" "}
             <Comment.Group>
-                {/* <hr/> */}
-                <CommentsList />
-            
-                    <CommentsAdd />
-              
-                
+                <CommentsList />           
+                    <CommentsAdd />              
             </Comment.Group>
         </div>
     );

@@ -1,14 +1,12 @@
 
 #PaymentForm {
-    margin-top: 30px;
-
+   margin-top: 30px;
    display: flex; 
    flex-direction: column;
    background-image: url("../../assets/images/photoshoot.jpg");
    padding-top: 60px;
-       background-repeat: no-repeat;
-       background-size: cover;
-   
+   background-repeat: no-repeat;
+   background-size: cover;
    }
    
    .inp__form{
@@ -19,11 +17,9 @@
    }
    .inp-input{
         margin: 20px;
-       
         padding: 10px;
         border:none;
         border-bottom: 2px solid rgba(255, 218, 185, 0.466);   
-    
    }
    .inp-input:hover{
     outline: 2px solid paleturquoise;

@@ -6,14 +6,13 @@ import Logorose  from "../../assets/images/logorose.jpg"
 import { productsContext } from '../../contexts/ProductsContext'
 
 
-
 export default function Header(){
   const history = useHistory()
     const [searchValue, setSearchValue] = useState(getSearchValue);
     const [click, setClick] = useState(false);
     const handleClick =()=>setClick(!click);
     const { getProducts } = useContext(productsContext)
-      //живой поиск
+
   const handleValue = (e) => {
     const search = new URLSearchParams(history.location.search);
     search.set("q", e.target.value);
@@ -31,14 +30,11 @@ export default function Header(){
         <nav className="navbar">
             <div className="nav-container">
                 <NavLink exact to="/main" className="nav-logo">
-                    <img className="logo" 
-                    
+                    <img className="logo"                
                     src={Logorose} style={{width:'60px',height:'50px', paddingTop:"15px"}}
-                    alt="logo"/>
-                  
+                    alt="logo"/>     
                 </NavLink>
-                <input type="text" onChange={handleValue} placeholder="Search..." className="seacrh"/>
-                
+                <input type="text" onChange={handleValue} placeholder="Search..." className="seacrh"/>      
                 <ul className={click ? "nav-menu active" : "nav-menu"}>
                     <li className="nav-item"><NavLink exact to="/main" activeClassName="active" className="nav-links" onClick={handleClick}>Home</NavLink></li>
                     <li className="nav-item"><NavLink exact to="/" activeClassName="active" className="nav-links" onClick={handleClick}>Gifts</NavLink></li>
@@ -48,13 +44,9 @@ export default function Header(){
                 </ul>
                 <div className="nav-icon" onClick={handleClick}>
                     <i className={click ? "fas fa-times" : "fas fa-bars"}/>
-
                 </div>
-
             </div>
         </nav>
-
-        
             
         </>
     )

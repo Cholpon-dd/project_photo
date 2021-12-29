@@ -5,10 +5,7 @@
     flex-wrap: wrap;
     padding-top: 30px;
 }
-/* .add__item input:hover {
-    font-size: 20px;
-    background-color: #dde4f1;
-} */
+
 .add-input:hover {
     font-size: 20px;
     background-color: #dde4f1;

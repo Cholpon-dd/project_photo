@@ -1,4 +1,4 @@
-import React, { useContext } from "react"; //////this
+import React, { useContext } from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import Card from "@material-ui/core/Card";
 import CardHeader from "@material-ui/core/CardHeader";
@@ -28,7 +28,7 @@ const useStyles = makeStyles((theme) => ({
   media: {
     backgroundSize: "contain",
     height: 0,
-    paddingTop: "56.25%", // 16:9
+    paddingTop: "56.25%", 
   },
 }));
 
@@ -67,7 +67,6 @@ export default function ProductCard(props) {
         </Typography>
       </CardContent>
       <Typography variant="h6" align="center">{props.item.price} сом</Typography>
-      {/* <FavoriteIcon disableSpacing> */}
         <IconButton aria-label="share"
         onClick={()=>addProductToCart(props.item)}
         color={checkProductInCart(props.item.id)? "secondary":"primary"}
@@ -94,11 +93,8 @@ export default function ProductCard(props) {
              />
            </IconButton> 
            <IconButton>
-           <ImageSearchIcon onClick={handleDetail}
-          // <button className="btn-detail" onClick={handleDetail}>Detail</button> 
-          /> 
-          </IconButton>         
-      
+           <ImageSearchIcon onClick={handleDetail}/> 
+          </IconButton>          
     </Card>
   );
 };

@@ -1,12 +1,10 @@
-import React, { useContext, useEffect, useRef, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import { Button } from "@material-ui/core";
 import "./Description.css";
 import { productsContext } from "../../contexts/ProductsContext";
 import Rating from "@material-ui/lab/Rating";
 import Typography from "@material-ui/core/Typography";
 import Box from "@material-ui/core/Box";
-// import { authContext, useAuth } from "../../contexts/AuthContext";
-// import { adminUID } from "../../helpers/API";
 import Comments from '../Comments/Comments'
 
 const AllDescription = (props) => {
@@ -18,8 +16,7 @@ const AllDescription = (props) => {
         saveTopic,
         addProductToCart,
     } = useContext(productsContext);
-    // const { currentUser } = useAuth();
-    // const { currentUser } = useContext(authContext);
+
     const [value, setValue] = React.useState(2);
 
     useEffect(() => {
@@ -84,7 +81,6 @@ const AllDescription = (props) => {
                                 {productDetails.description}
                             </textarea>
                             <button onClick={handleSave}>
-                                {/* <img src="https://www.shareicon.net/data/512x512/2015/06/23/58789_add_512x512.png" /> */}
                                 Сохранить
                             </button>
                         </div>
@@ -107,18 +103,6 @@ const AllDescription = (props) => {
                                     </Button>
                                     <div className="admin">
                                         {" "}
-                                        {/* {currentUser &&
-                                        currentUser.uid === adminUID ? (
-                                            // <div className="btn">
-                                            <button
-                                                onClick={() =>
-                                                    setEditStatus(true)
-                                                }
-                                            >
-                                                Edit
-                                            </button>
-                                        ) : // </div>
-                                        null} */}
                                     </div>
                                 </div>
                             </div>
@@ -157,16 +141,6 @@ const AllDescription = (props) => {
                                 <div className="table__cart_quick_subtitle">
                                     {productDetails.overview}
                                 </div>
-                                {/* <div className="btn">
-                                    <Button
-                                        style={{
-                                            fontSize: "20px",
-                                            border: "2px solid black",
-                                        }}
-                                    >
-                                        <a href="#aiperi">Full Description</a>
-                                    </Button>
-                                </div> */}
                                 <div id="aiperi ">
                                     <p className="table__text_p">
                                         {" "}
@@ -174,33 +148,9 @@ const AllDescription = (props) => {
                                     </p>
                                 </div>
                             </div>
-                            {/* <div  className="admin">
-                                {" "}
-                                {currentUser && currentUser.uid === adminUID ? (
-                                    <div>
-                                        <button
-                                            onClick={() => setEditStatus(true)}
-                                        >
-                                            
-                                            Редактировать
-                                        </button>
-                                    </div>
-                                ) : null}
-                            </div> */}
                         </div>
                     )}
                     <div className="buttons-description">
-                        {/* {currentUser && currentUser.uid === adminUID ? (
-                            <div>
-                                <button
-                                    className="button-des"
-                                    onClick={() => setEditStatus(true)}
-                                >
-                                    <img src="https://www.freeiconspng.com/uploads/edit-icon-orange-pencil-0.png" />
-                                    Edit
-                                </button>
-                            </div>
-                        ) : null} */}
                     </div>
                 </div>
             ) : (

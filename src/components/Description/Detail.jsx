@@ -6,7 +6,6 @@ import './Detail.css'
 const Detail = () => {
     const {  getProductDetails, productDetails } = useContext(productsContext)
     const id = useParams()
-    console.log(id.id)
 
     useEffect(() => {
         getProductDetails(id.id)

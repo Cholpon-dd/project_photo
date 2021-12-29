@@ -35,20 +35,16 @@ async function loginUser(e,history){
     }
     try{
         const {data} =await axios.post(`${AUTH_API}/api/auth/login`,user)
-        // console.log(data);
         history.push('/')
     }
     catch(err){
         console.log(err.response)
     }
-    
-
 }
 
-
 return ( <authContext.Provider value={{registerUser, loginUser}}>
-{children}
-</authContext.Provider>
-)
+    {children}
+     </authContext.Provider>
+    )
 }
 export default AuthContextProvider;

@@ -26,10 +26,7 @@ const Carousel = () => {
 <figure className="shadow"><img src={sis} className="carousel"/></figure>
               </div>
             </div>
-           
-
-        </section>
-            
+        </section>          
         </>
     )
 }

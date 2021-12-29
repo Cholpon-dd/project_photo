@@ -1,6 +1,5 @@
 import { TextField } from "@material-ui/core";
-import { CommentSharp } from "@material-ui/icons";
-import React, { useContext, useState, useEffect } from "react";
+import React, { useContext, useState } from "react";
 import { Button, Form } from "semantic-ui-react";
 import { commentContext } from "../../contexts/CommentContext";
 import { authContext, AuthContexts } from "../../contexts/AuthContext"
@@ -12,9 +11,6 @@ const CommentsAdd = () => {
         text: "",
         author: "",
     });
-    // useEffect(() => {
-    //     getComment();
-    // }, []);
     const handleValues = (e) => {
         let newComment = {
             ...com,
@@ -50,9 +46,6 @@ const CommentsAdd = () => {
                     className="comment-button"
                     onClick={sendComment}
                     content="Add Comment"
-                    // labelPosition="left"
-                    // icon="edit"
-                    // primary
                 />
             </Form>
         </div>

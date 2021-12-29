@@ -30,7 +30,6 @@ function Copyright() {
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    // height: '100vh',
   },
   image: {
     backgroundImage: 'url("https:images.pexels.com/photos/1290376/pexels-photo-1290376.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500")',
@@ -51,7 +50,7 @@ const useStyles = makeStyles((theme) => ({
     backgroundColor: theme.palette.secondary.main,
   },
   form: {
-    width: '100%', // Fix IE 11 issue.
+    width: '100%', 
     marginTop: theme.spacing(1),
   },
   submit: {

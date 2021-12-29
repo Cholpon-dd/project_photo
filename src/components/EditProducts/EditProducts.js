@@ -8,6 +8,7 @@ import CircularProgress from "@material-ui/core/CircularProgress";
 import { useHistory, useParams } from "react-router";
 import { Link } from "react-router-dom";
 import { Dialog, DialogActions, DialogContent, DialogContentText, DialogTitle } from "@material-ui/core";
+
 const useStyles = makeStyles((theme) => ({
   root: {
     margin: "30px",
@@ -39,10 +40,6 @@ export default function EditModal() {
     setOpenSpinner(false);
   };
 
-//   useEffect(() => {
-//    (params.id);
-//   }, []);
-
   const handleValues = (e) => {
     let editedCard = {
       ...editCard,
@@ -63,10 +60,6 @@ export default function EditModal() {
         <Dialog open={openModal} onClose={() => setOpenModal(false)} aria-labelledby="form-dialog-title">
             <DialogTitle id="form-dialog-title">Редактирование</DialogTitle>
             <DialogContent>
-                {/* <DialogContentText>
-                    To subscribe to this website, please enter your email address here. We will send updates
-                    occasionally.
-                </DialogContentText> */}
                       <TextField
                       autoFocus
                       margin="dense"
@@ -112,9 +105,6 @@ export default function EditModal() {
                       label="Image"
                       fullWidth
                   />
-
-                  
-              
             </DialogContent>
             <DialogActions>
                 <Button onClick={() => setOpenModal(false)} color="primary">
@@ -130,64 +120,3 @@ export default function EditModal() {
     </>
   );
 }
-
-
-
-// {open &&
-//     !check ? (
-//             <div>
-//               <Backdrop
-//                 className={classes.backdrop}
-//                 open={openSpinner}
-//                 onClick={handleCloseSpinner}
-//               >
-//                 <CircularProgress color="inherit" />
-//               </Backdrop>
-//             </div>
-//           ) : (
-//             <form className={classes.root} noValidate autoComplete="off">
-//               <TextField
-//                 name="title"
-//                 value={editCard.title}
-//                 onChange={handleValues}
-//               />
-//               <br />
-//               <TextField
-//                 name="price"
-//                 value={editCard.price}
-//                 onChange={handleValues}
-//               />
-//               <br />
-//               <TextField
-//                name="category"
-//                 value={editCard.category}
-//                 onChange={handleValues}
-//               />
-//               <br />
-//               <TextField
-//                 name="description"
-//                 value={editCard.description}
-//                 onChange={handleValues}
-//               />
-//               <br />
-//               <TextField
-//                name="image"
-//                value={editCard.image}
-//                onChange={handleValues}
-//               />
-             
-//               <Link to="/modal">
-//                 {" "}
-//                 <Button
-//                   variant="contained"
-//                   color="primary"
-//                   size="large"
-//                   className={classes.button}
-//                   onClick={saveEditedCard(editCard)}
-//                 >
-//                   Save
-//                 </Button>
-//               </Link>
-//             </form>
-//           )
-//         }
