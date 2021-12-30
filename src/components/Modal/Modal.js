@@ -101,7 +101,7 @@ const Modal = props=>{
             control={<Checkbox color="secondary" name="saveAddress" value="yes" />}
             label="Use this address for payment details"
           />  
-          <h5 className="modal_total">Total price: {props.totalPrice} $</h5>
+          <h5 className="modal_total">Total price: {props.totalPrice} сом</h5>
           <Link to='/payment'><button className="order-next">NEXT</button>
           </Link>  
         </Grid>
